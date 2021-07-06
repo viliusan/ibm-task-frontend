@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-//import { fetchApi } from "../requests/apiCalls";
+import { fetchApi } from "../requests/apiCalls";
 import { dummyData } from "../constants";
 import ArticleCard from "../components/ArticleCard";
 import "./Home.css";
 
 const Home = () => {
-  //   useEffect(() => {
-  //     // fetchApi();
-  //   }, []);
-
-  //console.log(dummyData.data.articles[0].content);
+  // useEffect(() => {
+  //   fetchApi();
+  // }, []);
 
   return (
     <div className="root">

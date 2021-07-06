@@ -9,5 +9,4 @@ export const fetchApi = async () => {
     .catch((err) => console.log(err));
 
   return res;
-
 };
