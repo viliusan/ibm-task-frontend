@@ -3,84 +3,111 @@ export const dummyData = {
     articles: [
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
       {
         content:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.\nLa pandémie de SARS-CoV-2 a fait au moins 3'987'613 morts dans le mond... [11059 chars]",
+          "Kasper Hjulmand is hoping England buckle under the weight of expectation to end their 55-year wait to win a major tournament.\nThe Denmark coach believes there would be nothing bigger than to beat the tournament favourites at Wembley and hopes his sid... [2525 chars]",
         description:
-          "L'Indonésie a annoncé mardi un record quotidien de 728 décès causés par le Covid-19. Face à une situation qui s'aggrave, les autorités vont importer de l'oxygène depuis Singapour.",
+          "Paul Gascoigne is among the former England players invited to attend tonight's Euro 2020 semi-final at Wembley as the Three Lions look to go one better than they did at Euro 96.",
         image:
-          "https://www.rts.ch/2021/07/06/13/16/12328559.image?w=1200&h=630",
-        publishedAt: "2021-07-06T11:13:14Z",
+          "https://www.telegraph.co.uk/content/dam/euro-2021/2021/07/07/TELEMMGLPICT000260736424_trans_NvBQzQNjv4BqM37qcIWR9CtrqmiMdQVx7BQs1CakW2yywbqrEpJz_2k.jpeg?impolicy=logo-overlay",
+        publishedAt: "2021-07-07T11:30:18Z",
+        source: { name: "The Telegraph", url: "https://www.telegraph.co.uk" },
+        title:
+          "Euro 2020: Boris Johnson and Paul Gascoigne on semi-final guest list",
       },
     ],
   },
