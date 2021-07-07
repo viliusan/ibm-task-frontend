@@ -3,11 +3,25 @@ import Button from "react-bootstrap/Button";
 import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import "./Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
 const Header = () => {
   const [formData, updateFormData] = React.useState("");
+  const [isValid, setIsValid] = React.useState(false);
+  const [message, setMessage] = React.useState("");
+
+  const validateSearch = (e) => {
+    const query = e.target.value;
+    if (searchQueryValidator.test(query)) {
+      setIsValid(true);
+      setMessage("");
+    } else {
+      setIsValid(false);
+      setMessage("Alphanumeric and space characters allowed only");
+    }
+  };
 
   const handleChange = (e) => {
     updateFormData({
@@ -16,11 +30,14 @@ const Header = () => {
       // Trimming any whitespace
       [e.target.name]: e.target.value.trim(),
     });
+    validateSearch(e);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendUserAction(formData);
+    if (isValid) {
+      sendUserAction(formData);
+    }
   };
 
   return (
@@ -45,12 +62,16 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Form inline onSubmit={handleSubmit}>
+            <Form.Control.Feedback className="queryFeedback" type="error">
+              {message}
+            </Form.Control.Feedback>
             <FormControl
               type="text"
               placeholder="Article Search"
               className="mr-sm-2"
               onChange={handleChange}
               name="searchQuery"
+              maxLength="40"
             />
             <Button variant="outline-success" type="submit">
               Search
