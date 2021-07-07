@@ -3,19 +3,23 @@ import React from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Article from "./pages/Article";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Router>
-        <Route path="/">
+    <Router>
+      <div className="App">
+        <Header />
+        <Route path="/" exact>
           <Home />
         </Route>
-      </Router>
-      <Footer />
-    </div>
+        <Route path="/article/:id">
+          <Article />
+        </Route>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

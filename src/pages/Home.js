@@ -3,7 +3,7 @@ import { fetchApi } from "../requests/apiCalls";
 import { dummyData } from "../constants";
 import ArticleCard from "../components/ArticleCard";
 import { sendOpenedArticle } from "../requests/userActions";
-import "./Home.css";
+import "../stylesheets/Home.css";
 
 const Home = () => {
   // useEffect(() => {

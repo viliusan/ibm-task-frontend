@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import "./Header.css";
+import "../stylesheets/Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
