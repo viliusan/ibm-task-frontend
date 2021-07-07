@@ -1,9 +1,28 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { Form, FormControl } from "react-bootstrap";
+import { sendUserAction } from "../requests/userActions";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+
+const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
 const Header = () => {
+  const [formData, updateFormData] = React.useState("");
+
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim(),
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendUserAction(formData);
+  };
+
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
@@ -25,13 +44,17 @@ const Header = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form inline>
+          <Form inline onSubmit={handleSubmit}>
             <FormControl
               type="text"
               placeholder="Article Search"
               className="mr-sm-2"
+              onChange={handleChange}
+              name="searchQuery"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-success" type="submit">
+              Search
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>
