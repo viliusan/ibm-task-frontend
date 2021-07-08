@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ArticleCard from "../components/ArticleCard";
-import { fetchApi } from "../requests/apiCalls";
-import "../styles/Search.css";
+import { fetchApiByTopic } from "../requests/apiCalls";
+import "../styles/Topic.css";
 
-const Search = () => {
-  const { query } = useParams();
+const Topic = () => {
+  const { id } = useParams();
   const [result, setResult] = useState([]);
+  console.log(id);
 
   useEffect(() => {
     async function fetchData() {
-      await fetchApi(query).then((res) => setResult(res));
+      await fetchApiByTopic(id).then((res) => setResult(res));
     }
     fetchData();
-  }, [query]);
+  }, [id]);
 
   if (!result?.data?.articles.length) return null;
   return (
-    <div className="search">
+    <div className="topic">
       {result.data.articles.map((article, index) => (
         <ArticleCard
           img={article.image}
@@ -31,4 +32,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Topic;

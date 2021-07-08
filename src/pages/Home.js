@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import { fetchApi } from "../requests/apiCalls";
 import { dummyData } from "../constants";
 import ArticleCard from "../components/ArticleCard";
-import "../stylesheets/Home.css";
+import "../styles/Home.css";
 
 const Home = () => {
   const [result, setResult] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      await fetchApi().then((res) => setResult(res));
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await fetchApi().then((res) => setResult(res));
+  //   }
+  //   fetchData();
+  // }, []);
 
   if (!result?.data?.articles.length) return null;
   return (

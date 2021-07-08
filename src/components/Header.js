@@ -4,7 +4,7 @@ import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import "../stylesheets/Header.css";
+import "../styles/Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
@@ -51,16 +51,26 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Topics" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/topic/world">World</NavDropdown.Item>
+              <NavDropdown.Item href="/topic/nation">Nation</NavDropdown.Item>
+              <NavDropdown.Item href="/topic/business">
+                Business
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/topic/technology">
+                Technology
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/topic/entertainemnt">
+                Entertainment
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/topic/sports">
+                Sports
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/topic/science">
+                Science
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/topic/health">
+                Health
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

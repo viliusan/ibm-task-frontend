@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { dummyData } from "../constants";
 import { Image } from "react-bootstrap";
-import "../stylesheets/Article.css";
+import "../styles/Article.css";
 
 const Article = () => {
   const { id } = useParams();
