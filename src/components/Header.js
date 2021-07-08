@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import "../stylesheets/Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
 const Header = () => {
-  const [formData, updateFormData] = React.useState("");
-  const [isValid, setIsValid] = React.useState(false);
-  const [message, setMessage] = React.useState("");
+  const [formData, updateFormData] = useState("");
+  const [isValid, setIsValid] = useState(false);
+  const [message, setMessage] = useState("");
+  const history = useHistory();
 
   const validateSearch = (e) => {
     const query = e.target.value;
@@ -37,6 +39,7 @@ const Header = () => {
     e.preventDefault();
     if (isValid) {
       sendUserAction(formData);
+      history.push(`/search/${formData.searchQuery}`);
     }
   };
 

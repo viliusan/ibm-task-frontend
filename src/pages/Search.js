@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { fetchApi } from "../requests/apiCalls";
-import { dummyData } from "../constants";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ArticleCard from "../components/ArticleCard";
-import "../stylesheets/Home.css";
+import { fetchApi } from "../requests/apiCalls";
+import "../stylesheets/Search.css";
 
-const Home = () => {
+const Search = () => {
+  const { query } = useParams();
   const [result, setResult] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      await fetchApi().then((res) => setResult(res));
+      await fetchApi(query).then((res) => setResult(res));
     }
     fetchData();
-  }, []);
+  }, [query]);
 
   if (!result?.data?.articles.length) return null;
   return (
@@ -30,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Search;

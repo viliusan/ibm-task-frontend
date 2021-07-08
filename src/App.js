@@ -2,8 +2,8 @@ import React from "react";
 //import { sendUserAction } from "./requests/userActions";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
 import Article from "./pages/Article";
+import Search from "./pages/Search";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -17,7 +17,12 @@ function App() {
         <Route path="/article/:id">
           <Article />
         </Route>
-        <Footer />
+        <Route>
+          <Route path="/search/:query">
+            <Search />
+          </Route>
+        </Route>
+        {/* <Footer /> */}
       </div>
     </Router>
   );

@@ -1,12 +1,17 @@
 import axios from "axios";
 
-export const fetchApi = async () => {
+export const fetchApi = async (query) => {
   const apiKey = "d6ec65a52238e8d2bdb0e22179e2327c";
+  if (query) {
+    const searchResults = await axios.get(
+      `https://gnews.io/api/v4/search?q=${query}&max=9&token=${apiKey}`
+    );
+    return searchResults;
+  }
 
-  const res = await axios
-    .get(`https://gnews.io/api/v4/top-headlines?token=${apiKey}`)
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err));
+  const res = await axios.get(
+    `https://gnews.io/api/v4/top-headlines?&max=9&token=${apiKey}`
+  );
 
   return res;
 };

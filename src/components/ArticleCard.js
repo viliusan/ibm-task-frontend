@@ -8,7 +8,11 @@ const ArticleCard = (props) => {
       style={{ width: "24rem", minWidth: "12rem" }}
       onClick={() => sendOpenedArticle(props)}
     >
-      <Link to={`/article/${props.title}`}>
+      <Link
+        to={`/article/${props.title}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Card.Img variant="top" src={props.img} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
