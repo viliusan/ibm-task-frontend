@@ -19,7 +19,7 @@ export const fetchApi = async (query) => {
 
 export const fetchApiByTopic = async (id) => {
   const results = await axios.get(
-    `https://gnews.io/api/v4/top-headlines?=topic=${id}&max=9&token=${apiKey}`
+    `https://gnews.io/api/v4/top-headlines?topic=${id}&max=9&token=${apiKey}`
   );
   return results;
 };

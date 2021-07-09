@@ -4,7 +4,7 @@ import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/Header.scss";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 

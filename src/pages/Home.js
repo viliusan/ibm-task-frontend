@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchApi } from "../requests/apiCalls";
 import { dummyData } from "../constants";
 import ArticleCard from "../components/ArticleCard";
-import "../styles/Home.css";
+import "../styles/Home.scss";
 
 const Home = () => {
   const [result, setResult] = useState([]);
@@ -14,10 +14,10 @@ const Home = () => {
   //   fetchData();
   // }, []);
 
-  if (!result?.data?.articles.length) return null;
+  if (!dummyData?.data?.articles.length) return null;
   return (
     <div className="search">
-      {result.data.articles.map((article, index) => (
+      {dummyData.data.articles.map((article, index) => (
         <ArticleCard
           img={article.image}
           title={article.title}

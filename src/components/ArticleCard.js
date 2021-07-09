@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { sendOpenedArticle } from "../requests/userActions";
+import useArticle from "../hooks/useArticle";
 
 const ArticleCard = (props) => {
   return (

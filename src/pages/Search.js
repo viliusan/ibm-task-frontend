@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ArticleCard from "../components/ArticleCard";
 import { fetchApi } from "../requests/apiCalls";
-import "../styles/Search.css";
+import "../styles/Search.scss";
 
 const Search = () => {
   const { query } = useParams();
