@@ -1,12 +1,19 @@
 .article {
-  margin: 5rem;
+  margin: 5rem 20rem 3rem;
   align-content: center;
+  color: white;
 }
 
 h1 {
   margin-bottom: 1.75rem;
+  font-weight: bold;
 }
 
 h3 {
-  size: 100pt;
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+p {
+  margin-top: 2rem;
 }

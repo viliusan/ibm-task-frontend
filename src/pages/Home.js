@@ -16,7 +16,7 @@ const Home = () => {
 
   if (!dummyData?.data?.articles.length) return null;
   return (
-    <div className="search">
+    <div className="root">
       {dummyData.data.articles.map((article, index) => (
         <ArticleCard
           img={article.image}
