@@ -4,6 +4,7 @@ import { Form, FormControl } from "react-bootstrap";
 import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import logo from "../assets/newspaper.png";
 import "../styles/Header.scss";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
@@ -45,8 +46,10 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-        <Navbar.Brand href="/">GNews Articles</Navbar.Brand>
+      <Navbar className="nav" variant="dark" expand="lg" fixed="top">
+        <Navbar.Brand href="/" id="navBrand">
+          <img src={logo} alt="logo"></img> GNews Articles
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -63,15 +66,9 @@ const Header = () => {
               <NavDropdown.Item href="/topic/entertainemnt">
                 Entertainment
               </NavDropdown.Item>
-              <NavDropdown.Item href="/topic/sports">
-                Sports
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/topic/science">
-                Science
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/topic/health">
-                Health
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/topic/sports">Sports</NavDropdown.Item>
+              <NavDropdown.Item href="/topic/science">Science</NavDropdown.Item>
+              <NavDropdown.Item href="/topic/health">Health</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form inline onSubmit={handleSubmit}>
