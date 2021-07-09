@@ -6,6 +6,9 @@
 a {
   color: #fff;
 }
+
 a:hover {
-  color: rgb(205, 205, 205);
+  color: #cdcdcd;
 }
+
+/*# sourceMappingURL=ArticleCard.css.map */

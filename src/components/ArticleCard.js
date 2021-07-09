@@ -1,8 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { sendOpenedArticle } from "../requests/userActions";
-import useArticle from "../hooks/useArticle";
-import "../styles/ArticleCard.scss";
+import "../styles/ArticleCard.css";
 
 const ArticleCard = (props) => {
   return (
@@ -12,7 +11,7 @@ const ArticleCard = (props) => {
       onClick={() => sendOpenedArticle(props)}
     >
       <Link
-        to={`/article/${props.title}`}
+        to={{ pathname: `/article/${props.title}`, state: true }}
         target="_blank"
         rel="noopener noreferrer"
         style={{ textDecoration: "none" }}

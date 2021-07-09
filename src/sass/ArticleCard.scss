@@ -1,0 +1,14 @@
+$primary-color: #fff;
+$secondary-color: #cdcdcd;
+
+.articleCard {
+  background-color: #1b1c1b;
+  margin-top: 3rem;
+}
+
+a {
+  color: $primary-color;
+}
+a:hover {
+  color: $secondary-color;
+}

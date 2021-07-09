@@ -1,21 +1,21 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams, withRouter } from "react-router-dom";
 import { dummyData } from "../constants";
 import { Image } from "react-bootstrap";
-import "../styles/Article.scss";
+import "../styles/Article.css";
 
 const Article = () => {
   const { id } = useParams();
+  const location = useLocation();
+  // const { props } = location.state;
   var clickedArticle = {};
   console.log(id);
 
   for (let article of dummyData.data.articles) {
-    if (article.title === id) {
-      clickedArticle = article;
-    }
+    if (article.title === id) clickedArticle = article;
   }
 
-  console.log(clickedArticle);
+  console.log(location);
 
   return (
     <div className="article">
@@ -28,4 +28,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default withRouter(Article);

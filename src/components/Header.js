@@ -5,7 +5,9 @@ import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import logo from "../assets/newspaper.png";
-import "../styles/Header.scss";
+import home from "../assets/home.png";
+import category from "../assets/category.png";
+import "../styles/Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
 
@@ -53,7 +55,14 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/">
+              <img src={home} alt="home"></img>Home
+            </Nav.Link>
+            <img
+              src={category}
+              style={{ width: 50, height: 49 }}
+              alt="category"
+            ></img>
             <NavDropdown title="Topics" id="basic-nav-dropdown">
               <NavDropdown.Item href="/topic/world">World</NavDropdown.Item>
               <NavDropdown.Item href="/topic/nation">Nation</NavDropdown.Item>
