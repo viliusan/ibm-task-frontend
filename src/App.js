@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Article from "./pages/Article";
 import Search from "./pages/Search";
 import Topic from "./pages/Topic";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path="/search/:query">
           <Search />
         </Route>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

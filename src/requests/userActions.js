@@ -7,5 +7,7 @@ export const sendUserAction = (actionName) => {
 
 export const sendOpenedArticle = (article) => {
   console.log(article);
-  axios.post("http://localhost:9999/userActions", { articleDetails: article });
+  axios.post("http://localhost:9999/clickedArticle", {
+    articleDetails: article,
+  });
 };

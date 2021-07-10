@@ -1,6 +1,12 @@
 .article {
-  margin: 6rem 20rem 3rem;
-  align-content: center;
+  @media (min-width: 1000px) {
+    margin: 6rem 10rem 3rem;
+    align-content: center;
+  }
+  @media (max-width: 1000px) {
+    margin: 5rem 2rem;
+    align-content: center;
+  }
   color: white;
 }
 

@@ -21,7 +21,7 @@ const ArticleCard = (props) => {
         to={`/article/${props.title}`}
         style={{ textDecoration: "none" }}
       >
-        <Card.Img variant="top" src={props.img} />
+        <Card.Img variant="top" src={props.img} style={{ maxHeight: 200 }} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text className="descriptionText">{props.description}</Card.Text>

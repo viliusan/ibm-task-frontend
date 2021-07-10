@@ -1,7 +1,17 @@
 .article {
-  margin: 6rem 20rem 3rem;
-  align-content: center;
   color: white;
+}
+@media (min-width: 1000px) {
+  .article {
+    margin: 6rem 10rem 3rem;
+    align-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .article {
+    margin: 5rem 2rem;
+    align-content: center;
+  }
 }
 
 h1 {
