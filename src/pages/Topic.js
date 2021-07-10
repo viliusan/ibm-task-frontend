@@ -9,12 +9,12 @@ const Topic = () => {
   const [result, setResult] = useState([]);
   console.log(id);
 
-  //   useEffect(() => {
-  //     async function fetchData() {
-  //       await fetchApiByTopic(id).then((res) => setResult(res));
-  //     }
-  //     fetchData();
-  //   }, [id]);
+  useEffect(() => {
+    async function fetchData() {
+      await fetchApiByTopic(id).then((res) => setResult(res));
+    }
+    fetchData();
+  }, [id]);
 
   if (!result?.data?.articles.length) return null;
   return (
@@ -25,6 +25,7 @@ const Topic = () => {
           title={article.title}
           description={article.description}
           publishedAt={article.publishedAt}
+          content={article.content}
           key={index}
         />
       ))}

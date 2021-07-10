@@ -4,16 +4,21 @@ import { sendOpenedArticle } from "../requests/userActions";
 import "../styles/ArticleCard.css";
 
 const ArticleCard = (props) => {
+  const onClick = () => {
+    // setArticle(props);
+    sendOpenedArticle(props);
+    localStorage.setItem("article", JSON.stringify(props));
+  };
   return (
     <Card
       className="articleCard"
       style={{ width: "24rem", minWidth: "12rem" }}
-      onClick={() => sendOpenedArticle(props)}
+      onClick={onClick}
     >
       <Link
-        to={{ pathname: `/article/${props.title}`, state: true }}
         target="_blank"
         rel="noopener noreferrer"
+        to={`/article/${props}`}
         style={{ textDecoration: "none" }}
       >
         <Card.Img variant="top" src={props.img} />

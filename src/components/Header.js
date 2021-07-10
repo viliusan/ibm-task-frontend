@@ -72,7 +72,7 @@ const Header = () => {
               <NavDropdown.Item href="/topic/technology">
                 Technology
               </NavDropdown.Item>
-              <NavDropdown.Item href="/topic/entertainemnt">
+              <NavDropdown.Item href="/topic/entertainment">
                 Entertainment
               </NavDropdown.Item>
               <NavDropdown.Item href="/topic/sports">Sports</NavDropdown.Item>

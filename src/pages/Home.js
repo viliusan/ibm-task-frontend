@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchApi } from "../requests/apiCalls";
-import { dummyData } from "../constants";
+// import { dummyData } from "../constants";
 import ArticleCard from "../components/ArticleCard";
 import "../styles/FileList.css";
 
@@ -14,6 +14,8 @@ const Home = () => {
     fetchData();
   }, []);
 
+  console.log(result);
+
   if (!result?.data?.articles.length) return null;
   return (
     <div className="listFiles">
@@ -23,6 +25,7 @@ const Home = () => {
           title={article.title}
           description={article.description}
           publishedAt={article.publishedAt}
+          content={article.content}
           key={index}
         />
       ))}

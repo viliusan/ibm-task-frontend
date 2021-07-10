@@ -24,6 +24,7 @@ const Search = () => {
           title={article.title}
           description={article.description}
           publishedAt={article.publishedAt}
+          content={article.content}
           key={index}
         />
       ))}
