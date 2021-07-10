@@ -11,4 +11,11 @@ a:hover {
   color: #cdcdcd;
 }
 
+.descriptionText {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 /*# sourceMappingURL=ArticleCard.css.map */

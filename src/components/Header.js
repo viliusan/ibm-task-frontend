@@ -80,22 +80,24 @@ const Header = () => {
               <NavDropdown.Item href="/topic/health">Health</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form inline onSubmit={handleSubmit}>
+          <div className="searchAndFeedback">
             <Form.Control.Feedback className="queryFeedback" type="error">
               {message}
             </Form.Control.Feedback>
-            <FormControl
-              type="text"
-              placeholder="Article Search"
-              className="mr-sm-2"
-              onChange={handleChange}
-              name="searchQuery"
-              maxLength="40"
-            />
-            <Button variant="outline-success" type="submit">
-              Search
-            </Button>
-          </Form>
+            <Form inline onSubmit={handleSubmit}>
+              <FormControl
+                type="text"
+                placeholder="Article Search"
+                className="mr-sm-2"
+                onChange={handleChange}
+                name="searchQuery"
+                maxLength="40"
+              />
+              <Button variant="outline-success" type="submit">
+                Search
+              </Button>
+            </Form>
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </header>

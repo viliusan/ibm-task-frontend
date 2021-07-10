@@ -24,7 +24,7 @@ const ArticleCard = (props) => {
         <Card.Img variant="top" src={props.img} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.description}</Card.Text>
+          <Card.Text className="descriptionText">{props.description}</Card.Text>
           <Card.Text>{props.publishedAt}</Card.Text>
         </Card.Body>
       </Link>

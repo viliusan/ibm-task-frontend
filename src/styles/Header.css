@@ -6,4 +6,10 @@
   background-color: #1e1f1e;
 }
 
+.searchAndFeedback {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=Header.css.map */
