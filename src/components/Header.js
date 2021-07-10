@@ -58,13 +58,8 @@ const Header = () => {
             <Nav.Link href="/">
               <img src={home} alt="home"></img>Home
             </Nav.Link>
-            <img
-              src={category}
-              style={{ width: 50, height: 49 }}
-              alt="category"
-            ></img>
             <NavDropdown title="Topics" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/topic/world">World</NavDropdown.Item>
+              <NavDropdown.Item href="/topic/world">World </NavDropdown.Item>
               <NavDropdown.Item href="/topic/nation">Nation</NavDropdown.Item>
               <NavDropdown.Item href="/topic/business">
                 Business

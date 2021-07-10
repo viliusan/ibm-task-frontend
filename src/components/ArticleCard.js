@@ -18,7 +18,7 @@ const ArticleCard = (props) => {
       <Link
         target="_blank"
         rel="noopener noreferrer"
-        to={`/article/${props}`}
+        to={`/article/${props.title}`}
         style={{ textDecoration: "none" }}
       >
         <Card.Img variant="top" src={props.img} />
