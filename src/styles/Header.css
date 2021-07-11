@@ -6,6 +6,11 @@
   background-color: #1e1f1e;
 }
 
+.navBrand {
+  font-family: BonaNova, Arial, serif;
+  font-weight: black;
+}
+
 .searchAndFeedback {
   display: flex;
   flex-wrap: wrap;

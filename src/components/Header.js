@@ -6,7 +6,6 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import logo from "../assets/newspaper.png";
 import home from "../assets/home.png";
-import category from "../assets/category.png";
 import "../styles/Header.css";
 
 const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
