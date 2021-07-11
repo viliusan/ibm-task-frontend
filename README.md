@@ -20,6 +20,10 @@ To use the application, simply use the search input to find articles about anyth
 
 Another thing worth mentioning is that the API gives you 100 calls every day. So spamming the application for API calls is not recommended as it will stop functioning.
 
+# Credits
+
+This project was made by Vilius Andraitis as a task for JavaScript Application Developer internship at IBM.
+
 #
 
 #
