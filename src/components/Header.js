@@ -5,10 +5,9 @@ import { sendUserAction } from "../requests/userActions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import logo from "../assets/newspaper.png";
-import home from "../assets/home.png";
 import "../styles/Header.css";
 
-const searchQueryValidator = /^[a-zA-Z0-9 ]*$/;
+const SEARCH_QUERY_VALIDATOR = /^[a-zA-Z0-9 ]*$/;
 
 const Header = () => {
   const [formData, updateFormData] = useState("");
@@ -18,7 +17,7 @@ const Header = () => {
 
   const validateSearch = (e) => {
     const query = e.target.value;
-    if (searchQueryValidator.test(query)) {
+    if (SEARCH_QUERY_VALIDATOR.test(query)) {
       setIsValid(true);
       setMessage("");
     } else {
@@ -30,8 +29,6 @@ const Header = () => {
   const handleChange = (e) => {
     updateFormData({
       ...formData,
-
-      // Trimming any whitespace
       [e.target.name]: e.target.value.trim(),
     });
     validateSearch(e);
@@ -49,14 +46,12 @@ const Header = () => {
     <header>
       <Navbar className="nav" variant="dark" expand="lg" fixed="top">
         <Navbar.Brand href="/" id="navBrand">
-          <img src={logo} alt="logo"></img> GNews Articles
+          <img src={logo} alt="logo" className="mr-2"></img> GNews Articles
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">
-              <img src={home} alt="home"></img>Home
-            </Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Topics" id="basic-nav-dropdown">
               <NavDropdown.Item href="/topic/world">World </NavDropdown.Item>
               <NavDropdown.Item href="/topic/nation">Nation</NavDropdown.Item>

@@ -16,6 +16,7 @@ const Search = () => {
   }, [query]);
 
   if (!result?.data?.articles.length) return null;
+  
   return (
     <div className="listFiles">
       {result.data.articles.map((article, index) => (

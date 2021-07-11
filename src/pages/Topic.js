@@ -7,7 +7,6 @@ import "../styles/FileList.css";
 const Topic = () => {
   const { id } = useParams();
   const [result, setResult] = useState([]);
-  console.log(id);
 
   useEffect(() => {
     async function fetchData() {
@@ -17,6 +16,7 @@ const Topic = () => {
   }, [id]);
 
   if (!result?.data?.articles.length) return null;
+
   return (
     <div className="listFiles">
       {result.data.articles.map((article, index) => (

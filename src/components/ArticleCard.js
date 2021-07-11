@@ -1,11 +1,11 @@
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
+import moment from "moment";
 import { sendOpenedArticle } from "../requests/userActions";
 import "../styles/ArticleCard.css";
 
 const ArticleCard = (props) => {
   const onClick = () => {
-    // setArticle(props);
     sendOpenedArticle(props);
     localStorage.setItem("article", JSON.stringify(props));
   };
@@ -25,7 +25,9 @@ const ArticleCard = (props) => {
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text className="descriptionText">{props.description}</Card.Text>
-          <Card.Text>{props.publishedAt}</Card.Text>
+          <Card.Text>
+            {moment(props.publishedAt).format("MM/DD/YYYY")}
+          </Card.Text>
         </Card.Body>
       </Link>
     </Card>
