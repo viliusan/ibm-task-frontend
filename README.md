@@ -1,4 +1,4 @@
-# IBM Task
+# GNews Articles App
 
 The front-end side of the application for the IBM Task
 
