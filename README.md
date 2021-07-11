@@ -10,6 +10,8 @@ This is a newspaper website application that lets the user search for news artic
 
 To install and run the project locally, first you must clone both 'ibm-task-frontend' and 'ibm-task' repositories into your machine, and then run `npm install` for both folders to install the required dependencies.
 
+Then, you need to create a .env file in the ibm-task-frontend src directory with a REACT_APP_BACKEND_URL variable pointing to the server.
+
 Next, start both projects with `npm start` and you are good to go! Front-end will be running on port 3000, back-end runs on port 9999
 
 User action history, such as search queries and details about clicked articles will also be stored in MongoDB. Look for `userActions` database after navigating through the application.
