@@ -20,7 +20,7 @@ const Topic = () => {
   return (
     <div className="listFiles">
       {result.data.articles.map((article, index) => (
-        <ArticleCard
+        <ArticleCard className="card"
           img={article.image}
           title={article.title}
           description={article.description}
